@@ -7,7 +7,7 @@
 
 ## 概要
 card_onsei.py→カード情報を読み取り、バックエンドに送り、音声を出すためのファイル<br>
-card.py→カード情報を出力するためのファイル。(出力した情報をユーザー登録の際に用いる)<br>
+cardread.py→カード情報を出力するためのファイル。(出力した情報をユーザー登録の際に用いる)<br>
 /home/pi/sounds/test_message.mp3→音声を発生させるためのサーバ<br>
 
 ## 手順
@@ -24,5 +24,6 @@ mkdir -p /home/pi/sounds<br>
 python3 -m http.server 8000　<br>
 
 5.アクティブにした状態で、以下のコマンドを実行する<br>
-python3 -m card.py →カードの情報を読み取る
-python3 -m card_onsei.py →カードの情報を読み取り、バックエンドの情報と照合し、照合出来たらスピーカーで音声を出力する。<br>
+cd felica_project
+python3 cardread.py →カードの情報を読み取る(ここで読み取った情報を使ってユーザー登録を行う)
+python3 card_onsei.py →カードの情報を読み取り、バックエンドの情報と照合し、照合出来たらスピーカーで音声を出力する。<br>
