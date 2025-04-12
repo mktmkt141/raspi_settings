@@ -15,7 +15,7 @@ cardread.py→カード情報を出力するためのファイル。(出力し�
 
 2.githubにクローンする<br>
 
-3.仮想環境をアクティブにする
+3.仮想環境をアクティブにする<br>
 `source ~/felica_project/venv/bin/activate`<br>
 
 4.MP3サーバを起動する
@@ -24,6 +24,6 @@ cardread.py→カード情報を出力するためのファイル。(出力し�
 `python3 -m http.server 8000`　<br>
 
 5.アクティブにした状態で、以下のコマンドを実行する<br>
-`cd felica_project`
-`python3 cardread.py` →カードの情報を読み取る(ここで読み取った情報を使ってユーザー登録を行う)
+`cd felica_project`<br>
+`python3 cardread.py` →カードの情報を読み取る(ここで読み取った情報を使ってユーザー登録を行う)<br>
 `python3 card_onsei.py` →カードの情報を読み取り、バックエンドの情報と照合し、照合出来たらスピーカーで音声を出力する。<br>
