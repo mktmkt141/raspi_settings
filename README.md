@@ -1,4 +1,5 @@
 ### ラズパイを用いたカード認識
+[このプロジェクト](https://github.com/mktmkt141/lab-management)に使うための設定が以下に記述されています。<br>
 
 ## 使用したもの
 ・Google Home<br>
